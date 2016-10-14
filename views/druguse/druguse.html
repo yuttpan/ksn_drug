@@ -1,0 +1,60 @@
+<div class="container">
+
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">รายงานการใช้ยา แยกรายหน่วยบริการ</h3>
+		</div>
+		<div class="panel-body">
+
+
+			<form class="form-inline">
+
+
+
+				<div class="form-group">
+					<label for="exampleInputEmail1">หน่วยบริการ</label>
+					<select name="" id="" class="form-control" required="required" ng-model="form.hcode">
+  <option value="10892">รพ.แก้งสนามนาง</option>
+  <option value="02832">รพ.สต.โนนสำราญ</option>
+  <option value="02833">รพ.สต.โนนระเวียง</option>
+  <option value="02834">รพ.สต.สีสุก</option>
+  <option value="02835">รพ.สต.หัวหนอง</option>
+  <option value="99962">Pcu แก้งสนามนาง</option>
+</select>
+
+<label for="exampleInputEmail1">เดือน</label>
+<select name="" id="inputmonth" class="form-control" required="required" ng-model="form.month">
+    <option value="{{m.id}}" ng-repeat="m in month ">{{m.name}}</option>
+</select>
+
+<label for="exampleInputEmail1">ปี</label>
+<select name="" id="inputyear" class="form-control" required="required" ng-model="form.year">
+    <option value="{{y.id}}" ng-repeat="y in year ">{{y.name}}</option>
+</select>
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+				<button class="btn btn-default" ng-click="submit(form)">Submit</button>
+			</form>
+
+		</div>
+
+
+
+
+
+
+	</div>
+
+</div>
