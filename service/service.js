@@ -1,7 +1,7 @@
  
  app.service('AppService',function() {
 
-this.selectDate = function(){
+this.selectMonth = function(){
 
 var date = [ {id : '1', name : 'ม.ค.'},
 {id : '2', name : 'ก.พ.'},
@@ -18,8 +18,18 @@ var date = [ {id : '1', name : 'ม.ค.'},
 
 ]
 
-
+return date ;
 }
 
+this.selectYear = function(){
+    var year = [
 
+{id : '2014', name : '2557'},
+{id : '2015', name : '2558'},
+{id : '2016', name : '2559'} ,
+{id : '2017', name : '2560'}
+
+    ]
+    return year ;
+}
  });

@@ -5,7 +5,7 @@
             "name": "Launch Chrome against localhost, with sourcemaps",
             "type": "chrome",
             "request": "launch",
-            "url": "http://localhost/ksn_hdc",
+            "url": "http://localhost/ksn_drug",
             "sourceMaps": true,
             "webRoot": "${workspaceRoot}"
         },
